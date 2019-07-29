@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Login Form - Show / Hide Password</title>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/0057a5e945.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="form">
+      <h1 class="form__header">Login Here</h1>
+
+      <div class="form__email-input">
+        <label for="email" class="sr-only">Email</label>
+        <i class="fal fa-envelope"></i>
+        <input type="email" placeholder="Email" />
+      </div>
+
+      <div class="form__password-input">
+        <label for="password" class="sr-only">Password</label>
+        <i class="fal fa-key"></i>
+        <input type="password" placeholder="Password" id="password" />
+        <span class="eye" onclick="togglePassword()">
+          <i id="show" class="fal fa-eye"></i>
+          <i id="hide" class="fal fa-eye-slash"></i>
+        </span>
+      </div>
+
+      <button id="loginBtn" class="login" type="button">Login</button>
+    </div>
+
+    <script>
+      event.preventDefault();
+
+      function togglePassword() {
+        let password = document.getElementById("password");
+        let show = document.getElementById("show");
+        let hide = document.getElementById("hide");
+
+        if (password.type === "password") {
+          password.type = "text";
+          show.style.display = "block";
+          hide.style.display = "none";
+        } else {
+          password.type = "password";
+          show.style.display = "none";
+          hide.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+body {
+  background-image: url("/img/stars.jpg");
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+.form {
+  width: 500px;
+  background: rgba(0, 0, 0, 0.7);
+  margin: 12% auto;
+  padding: 50px 0;
+  color: #fff;
+  -webkit-box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
+}
+
+.form__header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form__email-input, .form__password-input {
+  margin: 31px auto;
+  width: 80%;
+  border-bottom: 1px solid #fff;
+  padding: 10px 0 5px 0;
+}
+
+.form__email-input input, .form__password-input input {
+  width: 90%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+}
+
+.form .fal {
+  margin-right: 10px;
+}
+
+.form ::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.form :-ms-input-placeholder {
+  color: #fff;
+}
+
+.form ::-ms-input-placeholder {
+  color: #fff;
+}
+
+.form ::placeholder {
+  color: #fff;
+}
+
+.form .eye {
+  position: absolute;
+}
+
+.form #show {
+  display: none;
+}
+
+.form .login {
+  margin: 40px auto 20px;
+  width: 80%;
+  display: block;
+  outline: none;
+  padding: 10px 0;
+  border: 1px solid #fff;
+  cursor: pointer;
+  background: transparent;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=style.css.map */
